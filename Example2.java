@@ -138,7 +138,7 @@ public class Example2 {
     }
 
     private void runTrialsInParallel() {
-        IntStream.range(0, nTrials).parallel().forEach(this::step);
+        IntStream.range(0, nTrials).parallel().forEach(this::trial);
     }
 
     private void postProcessing() {
