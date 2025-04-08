@@ -124,7 +124,7 @@ public class Example4 {
         double theta_0 = 0.5, p_0 = 3.;
         int n = 50;
 
-        Example4 test = new Example4(theta_0, p_0, n, 100_000);
+        Example4 test = new Example4(theta_0, p_0, n, 1_000_000);
         test.runTrialsInParallel();
         System.out.printf("done in %.2f s\n", 1.e-3 * (System.currentTimeMillis() - t0));
         test.postProcessing();
